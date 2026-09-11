@@ -113,3 +113,41 @@ footer {
 .juego-destacado p {
     font-size: 15px;
 }
+
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #cc3333;
+}
+
+main ul {
+    display: inline-block;
+    text-align: left;
+}
