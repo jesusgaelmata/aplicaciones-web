@@ -23,26 +23,39 @@
     <main>
         <h2>Contáctanos</h2>
 
-        <p>Si tienes alguna duda, comentario o sugerencia, puedes escribirnos.</p>
+        <p>
+            Si tienes alguna duda, comentario o sugerencia sobre GameZone,
+            puedes escribirnos mediante el siguiente formulario.
+        </p>
 
         <form>
             <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
 
             <label for="correo">Correo:</label><br>
-            <input type="email" id="correo" name="correo"><br><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="tema">Tema:</label><br>
+            <select id="tema" name="tema">
+                <option value="duda">Duda</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="comentario">Comentario</option>
+            </select><br><br>
 
             <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5"></textarea><br><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
 
             <input type="submit" value="Enviar">
         </form>
 
+        <h2>Información de contacto</h2>
+
         <p>Correo: contacto@gamezone.com</p>
+        <p>También puedes visitar nuestras diferentes secciones para conocer más sobre los videojuegos.</p>
     </main>
 
     <footer>
-        <p>© 2026 GameZone</p>
+        <p>© 2026 GameZone | Proyecto de Aplicaciones Web</p>
     </footer>
 
 </body>
