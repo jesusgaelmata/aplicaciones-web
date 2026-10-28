@@ -1,0 +1,199 @@
+/* colores de la pagina */
+:root {
+    --claro: #EEEEEE;
+    --gris: #9CA3AF;
+    --medio: #4B5563;
+    --oscuro: #1F2937;
+    --negro: #111827;
+}
+
+/* letra para todo el texto */
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.05rem;
+    color: var(--negro);
+    background-color: var(--claro);
+}
+
+/* letra para titulos y texto importante */
+h1, h2, h3, h4, h5, legend, b, strong, .navbar-brand {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+}
+
+h1, h2 {
+    color: var(--oscuro);
+}
+
+h3, h4, h5 {
+    color: var(--negro);
+}
+
+main a {
+    color: var(--negro);
+    font-weight: bold;
+}
+
+main a:hover {
+    color: var(--medio);
+}
+
+.oculto {
+    display: none;
+}
+
+/* menu */
+.menu {
+    background-color: var(--oscuro);
+}
+
+.menu .navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.menu .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu .nav-link:hover,
+.menu .nav-link.active {
+    color: white;
+    text-decoration: underline;
+}
+
+/* botones */
+.btn-gris {
+    background-color: var(--medio);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-gris:hover {
+    background-color: var(--oscuro);
+    color: white;
+}
+
+/* titulo de cada pagina */
+.encabezado {
+    padding: 30px 0 10px;
+    margin-bottom: 25px;
+}
+
+.fondo-claro {
+    background-color: white;
+}
+
+/* inicio */
+.dato {
+    font-size: 1.15rem;
+    margin: 15px 0;
+}
+
+.tamano {
+    background-color: white;
+    border-top: 5px solid var(--medio);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* razas */
+.card {
+    border: 1px solid var(--gris);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.mas-info {
+    background-color: var(--claro);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* cuidados */
+.table th {
+    background-color: var(--oscuro);
+    color: white;
+}
+
+/* fotos que se recortan para que no queden muy altas */
+.foto-recorte {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+/* galeria */
+.foto {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* contacto */
+.caja-form {
+    background-color: white;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+fieldset {
+    margin-bottom: 25px;
+}
+
+legend {
+    font-size: 1.1rem;
+    color: var(--negro);
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #b02a37;
+    font-size: 0.95rem;
+}
+
+.btn-oscuro {
+    background-color: var(--oscuro);
+    color: white;
+    padding: 8px 30px;
+}
+
+.btn-oscuro:hover {
+    background-color: var(--medio);
+    color: white;
+}
+
+.resumen {
+    background-color: white;
+    border: 2px solid var(--oscuro);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* footer */
+footer {
+    background-color: var(--oscuro);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* pantallas medianas en adelante */
+@media (min-width: 768px) {
+    .foto {
+        height: 200px;
+    }
+}
